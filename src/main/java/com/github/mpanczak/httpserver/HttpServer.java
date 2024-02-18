@@ -30,7 +30,7 @@ public class HttpServer {
             serverListenerThread.start();
         } catch (IOException e) {
             e.printStackTrace();
-            // TODO handle later
+            LOGGER.error("Problem with setting socket", e);
         }
 
     }
